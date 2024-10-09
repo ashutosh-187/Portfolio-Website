@@ -15,7 +15,7 @@ import Work4 from './assets/code.jpg';
 import Work5 from './assets/flight_Booking.jpg';
 import Work6 from './assets/flightStatus.jpg';
 import Work7 from './assets/currencyConvert.jpg';
-import Work8 from './assets/chatbot.jpg';
+import Work8 from './assets/chatBot.jpg';
 import Work9 from './assets/keyboard.jpg';
 
 import Theme1 from './assets/purple.png';
