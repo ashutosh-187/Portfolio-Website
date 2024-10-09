@@ -9,14 +9,14 @@ import {
 import { FiUser, FiExternalLink } from 'react-icons/fi';
 
 import Work1 from './assets/ochi.jpg';
-import Work2 from './assets/sidcup.jpg';
-import Work3 from './assets/keyboard.jpg';
+import Work2 from './assets/Educity.jpg';
+import Work3 from './assets/sidcup.jpg';
 import Work4 from './assets/code.jpg';
-import Work5 from './assets/Educity.jpg';
-import Work6 from './assets/flight_Booking.jpg';
-import Work7 from './assets/flightStatus.jpg';
+import Work5 from './assets/flight_Booking.jpg';
+import Work6 from './assets/flightStatus.jpg';
+import Work7 from './assets/currencyConvert.jpg';
 import Work8 from './assets/chatbot.jpg';
-import Work9 from './assets/currencyConvert.jpg';
+import Work9 from './assets/keyboard.jpg';
 
 import Theme1 from './assets/purple.png';
 import Theme2 from './assets/red.png';
@@ -184,6 +184,24 @@ export const portfolio = [
   {
     id: 2,
     img: Work2,
+    title: 'Edusity Website Clone',
+    details: [
+      {
+        icon: <FaCode />,
+        title: 'Tech Stack : ',
+        desc: 'React.JS, HTML, CSS',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Live Demo',
+        desc: 'https://edusity-weld.vercel.app/',
+      },
+    ],
+  },
+
+  {
+    id: 3,
+    img: Work3,
     title: 'Sidcup Family Golf Website Clone',
     details: [
       {
@@ -195,24 +213,6 @@ export const portfolio = [
         icon: <FiExternalLink />,
         title: 'Live Demo',
         desc: 'https://master--sidcup-family-clone-187.netlify.app/',
-      },
-    ],
-  },
-
-  {
-    id: 3,
-    img: Work3,
-    title: 'Gesture Based Keyboard',
-    details: [
-      {
-        icon: <FaCode />,
-        title: 'Tech Stack : ',
-        desc: 'Python, OpenCV, MediaPipe'
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Source Code',
-        desc: 'https://github.com/ashutosh-187/Gesture-Based-Keyboard',
       },
     ],
   },
@@ -238,24 +238,6 @@ export const portfolio = [
   {
     id: 5,
     img: Work5,
-    title: 'Edusity Website Clone',
-    details: [
-      {
-        icon: <FaCode />,
-        title: 'Tech Stack : ',
-        desc: 'React.JS, HTML, CSS',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Live Demo',
-        desc: 'https://edusity-weld.vercel.app/',
-      },
-    ],
-  },
-
-  {
-    id: 6,
-    img: Work6,
     title: 'Flight Booking System',
     details: [
       {
@@ -272,8 +254,8 @@ export const portfolio = [
   },
 
   {
-    id: 7,
-    img: Work7,
+    id: 6,
+    img: Work6,
     title: 'Realtime Flight Status',
     details: [
       {
@@ -285,6 +267,24 @@ export const portfolio = [
         icon: <FiExternalLink />,
         title: 'Source Code',
         desc: 'https://github.com/ashutosh-187/Flight_Status',
+      },
+    ],
+  },
+
+  {
+    id: 7,
+    img: Work7,
+    title: 'Currency Convertor',
+    details: [
+      {
+        icon: <FaCode />,
+        title: 'Tech Stack : ',
+        desc: 'React.JS, HTML, CSS',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Live Demo',
+        desc: 'https://taupe-chebakia-e43ede.netlify.app/',
       },
     ],
   },
@@ -310,20 +310,21 @@ export const portfolio = [
   {
     id: 9,
     img: Work9,
-    title: 'Currency Convertor',
+    title: 'Gesture Based Keyboard',
     details: [
       {
         icon: <FaCode />,
         title: 'Tech Stack : ',
-        desc: 'React.JS, HTML, CSS',
+        desc: 'Python, OpenCV, MediaPipe'
       },
       {
         icon: <FiExternalLink />,
-        title: 'Live Demo',
-        desc: 'https://taupe-chebakia-e43ede.netlify.app/',
+        title: 'Source Code',
+        desc: 'https://github.com/ashutosh-187/Gesture-Based-Keyboard',
       },
     ],
   },
+
 ];
 
 export const themes = [
