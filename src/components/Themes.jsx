@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from "react";
-import {themes} from "../data"
+import { themes } from "../data"
 import ThemeItem from "./ThemeItem";
 import { IoColorPalette } from "react-icons/io5";
 import { MdLightMode, MdDarkMode } from "react-icons/md";
 import "./Themes.css"
 
-const getStorageColor = ()=>{
+const getStorageColor = () => {
     let color = 'hsl(42, 100%, 50%)'
-    if(localStorage.getItem('color')){
+    if (localStorage.getItem('color')) {
         color = localStorage.getItem('color')
     }
     return color;
 }
-const getStorageTheme = ()=>{
+const getStorageTheme = () => {
     let theme = 'dark-theme'
-    if(localStorage.getItem('theme')){
+    if (localStorage.getItem('theme')) {
         theme = localStorage.getItem('theme')
     }
     return theme;
@@ -24,44 +24,44 @@ export default function Themes() {
     const [showSwitcher, setShowSwitcher] = useState(false)
     const [color, setColor] = useState(getStorageColor())
     const [theme, setTheme] = useState(getStorageTheme())
-    const changeColor = (color)=>{
+    const changeColor = (color) => {
         setColor(color)
     }
-    const toggleTheme = ()=>{
-        if(theme === 'light-theme'){
+    const toggleTheme = () => {
+        if (theme === 'light-theme') {
             setTheme('dark-theme')
-        }else{
+        } else {
             setTheme('light-theme')
         }
     }
-    useEffect(()=>{
+    useEffect(() => {
         document.documentElement.style.setProperty('--first-color', color)
         localStorage.setItem('color', color)
     }, [color])
-    useEffect(()=>{
-        document.documentElement.className=theme;
+    useEffect(() => {
+        document.documentElement.className = theme;
         localStorage.setItem('theme', theme)
     }, [theme])
-    return(
+    return (
         <div>
             <div className={`${showSwitcher ? 'show-switcher' : ''} style__switcher`}>
-                <div className="style__switcher-toggle" onClick={()=>setShowSwitcher(!showSwitcher)}>
-                    <IoColorPalette/>
+                <div className="style__switcher-toggle" onClick={() => setShowSwitcher(!showSwitcher)}>
+                    <IoColorPalette />
                 </div>
                 <div className="theme__toggler" onClick={toggleTheme}>
-                    {theme === 'light-theme'?<MdDarkMode/>:<MdLightMode/>}
+                    {theme === 'light-theme' ? <MdDarkMode /> : <MdLightMode />}
                 </div>
                 <h3 className="style__switcher-title">
                     Style Switcher
                 </h3>
                 <div className="style__switcher-items">
-                    {themes.map((theme, index)=>{
-                        return(
-                            <ThemeItem key={index} {...theme} changeColor={changeColor}/>
+                    {themes.map((theme, index) => {
+                        return (
+                            <ThemeItem key={index} {...theme} changeColor={changeColor} />
                         )
                     })}
                 </div>
-                <div className="style__switcher-close" onClick={()=>setShowSwitcher(!showSwitcher)}>
+                <div className="style__switcher-close" onClick={() => setShowSwitcher(!showSwitcher)}>
                     &times;
                 </div>
             </div>

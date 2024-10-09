@@ -12,5 +12,4 @@ function ResumeItem({ icon, year, title, desc }) {
     );
 }
 
-
 export default ResumeItem;

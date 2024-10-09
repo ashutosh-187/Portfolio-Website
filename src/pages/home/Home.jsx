@@ -21,12 +21,12 @@ function Home() {
                         Mern stack and Python developer with expertise in back-end and front-end development,
                         skilled at creating high-quality dynamic applications.
                     </p>
-                        <Link to='/about' className="button">
-                            More About Me
-                            <span className="button__icon">
-                                <FaArrowRight />
-                            </span>
-                        </Link>
+                    <Link to='/about' className="button">
+                        More About Me
+                        <span className="button__icon">
+                            <FaArrowRight />
+                        </span>
+                    </Link>
                 </div>
             </div>
             <div className="color__block"></div>

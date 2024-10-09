@@ -1,7 +1,6 @@
 import {
   FaHome,
   FaUser,
-  FaFolderOpen,
   FaEnvelopeOpen,
   FaBriefcase,
   FaGraduationCap,
@@ -47,8 +46,8 @@ export const links = [
 
   {
     id: 3,
-    name: 'Portfolio',
-    icon: <FaFolderOpen className='nav__icon' />,
+    name: 'Projects',
+    icon: <FaCode className='nav__icon' />,
     path: '/portfolio',
   },
 
@@ -90,13 +89,13 @@ export const personalInfo = [
     title: 'Freelance : ',
     description: 'Available',
   },
-  
+
   {
     id: 5,
     title: 'Highest Education : ',
     description: 'B.Tech',
   },
-  
+
   {
     id: 6,
     title: 'Langages : ',

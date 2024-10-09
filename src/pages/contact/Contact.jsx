@@ -16,9 +16,9 @@ function Contact() {
         });
         const data = await response.json();
         if (data.success) {
-            toast('✌️ Form submitted!', {className:'toastify__toast--success'});
+            toast('✌️ Form submitted!', { className: 'toastify__toast--success' });
         } else {
-            toast('☹️ Some error occured!', {className: "toastify__toast--error"});
+            toast('☹️ Some error occured!', { className: "toastify__toast--error" });
         }
     }
     return (

@@ -79,7 +79,7 @@
         display: none;
     }
 
-    .nav{
+    .nav {
         position: fixed;
         inset-block: 0;
         right: 30px;

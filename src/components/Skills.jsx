@@ -64,41 +64,41 @@ function Skills() {
     ];
     const handleTheme = () => {
         const currentTheme = getStorageTheme()
-        if (currentTheme === "dark-theme"){
+        if (currentTheme === "dark-theme") {
             setExpressIcon(Express)
             setNextIcon(Next)
             setThreeIcon(ThreeJS)
             setGithubIcon(GitHub)
-        }else{
+        } else {
             setExpressIcon(ExpressDark)
             setNextIcon(NextDark)
             setThreeIcon(ThreeDark)
             setGithubIcon(GithubDark)
         }
     }
-    useEffect(()=>{
-        
+    useEffect(() => {
+
         const toggleButton = document.querySelector('.theme__toggler');
         if (toggleButton) {
-        toggleButton.addEventListener('click', handleTheme);
+            toggleButton.addEventListener('click', handleTheme);
         }
-        return ()=>{
+        return () => {
             toggleButton.removeEventListener('click', handleTheme);
         }
-        
+
     }, [theme])
     return (
         <div className="main">
             <div className="skills__container grid">
-            <div className="skills__container">
-                {skillIcons.map((skill, index) => (
-                    <div className="skill__item" key={index} title={skill.title}>
-                        <img src={skill.icon} alt={skill.title} className="skillImg" />
-                        <span className="skill__name">{skill.title}</span>
-                    </div>
-                ))}
+                <div className="skills__container">
+                    {skillIcons.map((skill, index) => (
+                        <div className="skill__item" key={index} title={skill.title}>
+                            <img src={skill.icon} alt={skill.title} className="skillImg" />
+                            <span className="skill__name">{skill.title}</span>
+                        </div>
+                    ))}
+                </div>
             </div>
-        </div>
         </div>
     );
 }
