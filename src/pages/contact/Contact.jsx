@@ -40,46 +40,6 @@ function Contact() {
                         projects, creative ideas or opportunities to be part of your
                         visions.
                     </p>
-                    <div className="display__info">
-                        <div className="contact__info">
-                            <div className="info__item">
-                                <FaEnvelopeOpen className="info__icon" />
-                                <div>
-                                    <span className="info__title">Mail me</span>
-                                    <h4 className="info__desc">
-                                        work.withashutosh1807@gmail.com
-                                    </h4>
-                                </div>
-                            </div>
-                            <div className="info__item">
-                                <FaPhoneSquareAlt className="info__icon" />
-                                <div>
-                                    <span className="info__title">Call me</span>
-                                    <h4 className="info__desc">+91 6386175405</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="contact__socials">
-                            <a
-                                href="https://www.linkedin.com/in/ashutosh-tiwari-a938a6243/"
-                                className="contact__social-link"
-                            >
-                                <FaLinkedin />
-                            </a>
-                            <a
-                                href="https://www.instagram.com/ashutosh__187/"
-                                className="contact__social-link"
-                            >
-                                <FaInstagram />
-                            </a>
-                            <a
-                                href="https://github.com/ashutosh-187"
-                                className="contact__social-link"
-                            >
-                                <FaGithub />
-                            </a>
-                        </div>
-                    </div>
                 </div>
                 <form className="contact__form" onSubmit={onSubmit}>
                     <div className="form__input-group">
@@ -138,6 +98,46 @@ function Contact() {
                     />
                 </form>
             </div>
+                    <div className="display__info">
+                        <div className="contact__info">
+                            <div className="info__item">
+                                <FaEnvelopeOpen className="info__icon" />
+                                <div>
+                                    <span className="info__title">Mail me</span>
+                                    <h4 className="info__desc">
+                                        work.withashutosh1807@gmail.com
+                                    </h4>
+                                </div>
+                            </div>
+                            <div className="info__item">
+                                <FaPhoneSquareAlt className="info__icon" />
+                                <div>
+                                    <span className="info__title">Call me</span>
+                                    <h4 className="info__desc">+91 6386175405</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="contact__socials">
+                            <a
+                                href="https://www.linkedin.com/in/ashutosh-tiwari-a938a6243/"
+                                className="contact__social-link"
+                            >
+                                <FaLinkedin />
+                            </a>
+                            <a
+                                href="https://www.instagram.com/ashutosh__187/"
+                                className="contact__social-link"
+                            >
+                                <FaInstagram />
+                            </a>
+                            <a
+                                href="https://github.com/ashutosh-187"
+                                className="contact__social-link"
+                            >
+                                <FaGithub />
+                            </a>
+                        </div>
+                    </div>
         </section>
     );
 }

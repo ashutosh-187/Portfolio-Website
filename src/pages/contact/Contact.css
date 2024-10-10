@@ -104,3 +104,15 @@
     background-color: #dc3545 !important;
     color: white !important;
 }
+
+.display__info{
+    display: flex;
+    position: absolute;
+    top: 28%;
+    left: 20%;
+    width: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin: 100px;
+}
