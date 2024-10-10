@@ -108,11 +108,9 @@
 .display__info{
     display: flex;
     position: absolute;
-    top: 28%;
-    left: 20%;
-    width: auto;
+    top: 38%;
+    left: 24%;
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    margin: 100px;
 }
