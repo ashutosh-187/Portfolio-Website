@@ -122,7 +122,7 @@ export const resume = [
     icon: <FaBriefcase />,
     year: 'Mar 2024 - Aug 2024',
     title: 'Software Developer Intern <span> DigiVista InfoTech </span>',
-    desc: 'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,',
+    desc: '',
   },
 
   {
@@ -131,7 +131,7 @@ export const resume = [
     icon: <FaBriefcase />,
     year: '2021 - 2023',
     title: 'Technical Writter <span> WebCom Designs </span>',
-    desc: 'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,',
+    desc: '',
   },
 
   {

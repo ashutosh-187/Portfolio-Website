@@ -240,3 +240,124 @@
             height: 100%;
         }
     }
+
+    @media screen and (max-width: 450px) {
+        /* Container and General Layout */
+        .container {
+            max-width: 100%;
+            padding: 0 20px;
+            margin: 0 auto;
+        }
+    
+        /* Home Section */
+        .home {
+            display: flex;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .color__block {
+            display: none;
+        }
+
+        .home__img {
+            width: 270px;
+            height: 270px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 0 8px hsla(0, 0%, 0%, 0.3);
+        }
+
+        .home__content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 500px;
+            text-align: center;
+            margin-bottom: auto;
+        }
+
+        .home__title {
+            padding-left: 0;
+        }
+
+        .home__title::before {
+            all: unset;
+        }
+
+        .home__title span {
+            display: block;
+        }
+    
+        /* Skills Section */
+        .skills__container {
+            display: grid;
+        }
+    
+        /* Portfolio Section */
+        .portfolio__container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .portfolio__modal-content {
+            width: 100%;
+            padding: 20px;
+        }
+        
+        /* Modals */
+        .modal__close {
+            width: 30px;
+            height: 30px;
+        }
+
+        /* Contact Section */
+        .contact__container {
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 25px;
+        }
+
+        .contact__info{
+            position: absolute;
+            bottom: 7%;
+        }
+
+        .info__title{
+            display: none;
+        }
+
+        .contact__socials{
+            position: absolute;
+            bottom: 2%;
+            right: 9%;
+        }
+    
+        /* Navigation */
+        .nav__toggle {
+            top: 15px;
+            right: 10px;
+        }
+    
+        .nav__link {
+            font-size: 1rem;
+        }
+    
+        .nav__icon {
+            font-size: 1.2rem;
+        }
+
+        .grid {
+            display: grid;
+            padding: 0% 5%;
+            text-align: center;
+        }
+    
+        .section {
+            padding: 30px 0;
+        }
+    
+        .form__input-group {
+            grid-template-columns: 1fr;
+        }
+    }
