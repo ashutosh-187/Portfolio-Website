@@ -5,6 +5,7 @@ import {
     FaLinkedin,
     FaInstagram,
     FaGithub,
+    FaWhatsapp
 } from "react-icons/fa";
 import { FiSend } from "react-icons/fi";
 import { ToastContainer, toast } from "material-react-toastify";
@@ -34,11 +35,15 @@ function Contact() {
             </h2>
             <div className="contact__container container grid">
                 <div className="contact__data__left">
-                    <h3 className="contact__title">Don't be shy</h3>
+                    <h3 className="contact__title">Ready to start working together?</h3>
                     <p className="contact__description">
-                        Feel Free to get in touch with me. I am alway open to discussing new
-                        projects, creative ideas or opportunities to be part of your
-                        visions.
+                        If you have a
+                        project in mind or would like
+                        to discuss potential
+                        opportunities, please don't
+                        hesitate to get in touch. I will
+                        do my best to answer you as
+                        soon as possible.
                     </p>
                     <div className="display__info">
                         <div className="contact__info">
@@ -61,22 +66,28 @@ function Contact() {
                         </div>
                         <div className="contact__socials">
                             <a
+                                href="https://github.com/ashutosh-187"
+                                className="contact__social-link"
+                            >
+                                <FaGithub />
+                            </a>
+                            <a
                                 href="https://www.linkedin.com/in/ashutosh-tiwari-a938a6243/"
                                 className="contact__social-link"
                             >
                                 <FaLinkedin />
                             </a>
                             <a
+                                href="https://wa.link/g9jvdh"
+                                className="contact__social-link"
+                            >
+                                <FaWhatsapp/>
+                            </a>
+                            <a
                                 href="https://www.instagram.com/ashutosh__187/"
                                 className="contact__social-link"
                             >
                                 <FaInstagram />
-                            </a>
-                            <a
-                                href="https://github.com/ashutosh-187"
-                                className="contact__social-link"
-                            >
-                                <FaGithub />
                             </a>
                         </div>
                     </div>
