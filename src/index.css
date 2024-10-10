@@ -318,19 +318,32 @@
             row-gap: 25px;
         }
 
-        .contact__info{
+        /* .contact__info{
             position: absolute;
             bottom: 7%;
         }
 
         .info__title{
             display: none;
-        }
+        }*/
 
-        .contact__socials{
+        /* .contact__data{
+            position: absolute;
+            bottom: -1%;
+        } */
+
+        .display__info{
+            display: flex;
+            flex-direction: column;
             position: absolute;
             bottom: 2%;
-            right: 9%;
+            justify-content: center;
+            align-items: left;
+            text-align: center;
+        }
+
+        .info__title{
+            display: none;
         }
     
         /* Navigation */
