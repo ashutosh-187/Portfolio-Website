@@ -1,5 +1,17 @@
-.contact__container {
-    grid-template-columns: 4fr 8fr;
+.contact__container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    flex-direction: row;
+}
+
+.contact__data__left{
+    width: 100%;
+    /* background: red; */
+}
+
+.contact__form{
+    width: 100%;
+    /* background-color: purple; */
 }
 
 .contact__title {
@@ -103,14 +115,4 @@
 .toastify__toast--error {
     background-color: #dc3545 !important;
     color: white !important;
-}
-
-.display__info{
-    display: flex;
-    position: absolute;
-    top: 38%;
-    left: 24%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
 }
