@@ -23,6 +23,7 @@ import ExpressDark from "../assets/skills/Express-dark.svg";
 import NextDark from "../assets/skills/Next-dark.svg";
 import ThreeDark from "../assets/skills/Three-dark.svg";
 import GithubDark from "../assets/skills/Github-dark.svg";
+import Docker from "../assets/skills/Docker.svg";
 import "./Skills.css"
 
 const getStorageTheme = () => {
@@ -60,6 +61,7 @@ function Skills() {
         { icon: NumPy, title: "NumPy" },
         { icon: Pandas, title: "Pandas" },
         { icon: OpenCV, title: "OpenCV" },
+        { icon: Docker, title: "Docker" },
         { icon: GithubIcon, title: "GitHub" },
     ];
     const handleTheme = () => {

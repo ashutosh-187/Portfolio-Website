@@ -120,13 +120,21 @@ export const resume = [
     id: 1,
     category: 'experience',
     icon: <FaBriefcase />,
+    year: 'DEC 2024 - Present',
+    title: 'Backend Developer Intern <span> Mudraksh & McShaw Tech LLP </span>',
+    desc: '',
+  },
+  {
+    id: 2,
+    category: 'experience',
+    icon: <FaBriefcase />,
     year: 'Mar 2024 - Aug 2024',
     title: 'Software Developer Intern <span> DigiVista InfoTech </span>',
     desc: '',
   },
 
   {
-    id: 1,
+    id: 3,
     category: 'experience',
     icon: <FaBriefcase />,
     year: '2021 - 2023',
